@@ -11,9 +11,19 @@ export default function Navbar() {
           React Typescript SPA Starter
         </Text>
         {colorMode === 'light' ? (
-          <MoonIcon color="white" role="button" onClick={toggleColorMode} />
+          <MoonIcon
+            color="gray.300"
+            role="button"
+            boxSize="1.2em"
+            onClick={toggleColorMode}
+          />
         ) : (
-          <SunIcon color="white" role="button" onClick={toggleColorMode} />
+          <SunIcon
+            color="gray.300"
+            role="button"
+            boxSize="1.2em"
+            onClick={toggleColorMode}
+          />
         )}
       </HStack>
     </Box>
