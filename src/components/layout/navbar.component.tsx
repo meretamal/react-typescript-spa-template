@@ -1,13 +1,21 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Box, HStack, Text, useColorMode } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
 export default function Navbar() {
+  const navigate = useNavigate();
   const { colorMode, toggleColorMode } = useColorMode();
   return (
     <Box p="4" boxShadow={colorMode === 'light' ? 'md' : 'none'}>
       <HStack justify="space-between" align="center">
-        <Text fontSize="lg" fontWeight="bold" color="teal.300">
+        <Text
+          fontSize="lg"
+          fontWeight="bold"
+          color="teal.300"
+          cursor="pointer"
+          onClick={() => navigate('/')}
+        >
           React Typescript SPA Starter
         </Text>
         {colorMode === 'light' ? (
