@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Box, HStack, Text, useColorMode } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import { Box, Heading, Link, Stack, Text } from '@chakra-ui/react';
 import Hero from '../../components/layout/hero.component';

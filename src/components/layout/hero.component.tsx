@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import { Box, BoxProps } from '@chakra-ui/react';
 
 export interface HeroProps extends BoxProps {
