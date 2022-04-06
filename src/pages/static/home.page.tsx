@@ -1,6 +1,6 @@
 import React from 'react';
 import { Heading } from '@chakra-ui/react';
-import Hero from '../components/layout/hero.component';
+import Hero from '../../components/layout/hero.component';
 
 export default function HomePage() {
   return (
