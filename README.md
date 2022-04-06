@@ -1,46 +1,46 @@
-# Getting Started with Create React App
+# React SPA Starter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React SPA developed with Typescript, with all the cool things you need.
 
-## Available Scripts
+To scaffold this project I used [Vite](https://vitejs.dev/).
 
-In the project directory, you can run:
+You can check out a production build of the template in [here](), in case you want to test it before using it.
 
-### `yarn start`
+## Setup
+First of all, make a copy of this project by clicking on **"Use this template"**.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Now that you have your own repository, clone it and install its dependencies:
+```bash
+yarn install # npm install
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+If your app will make use of an external API, create a .env file:
+```
+cp .env.example .env.local
+```
+and add its base url.
 
-### `yarn test`
+Finally, run your app:
+```bash
+yarn dev # npm run dev
+```
+and visit http://localhost:3000 (you can change the port by adding the `PORT` variable to your .env file).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tools and packages
+This template comes with different tools that you will definetly love:
+* [Cypress](https://www.cypress.io/) to develop end to end tests.
+* [Eslint](https://eslint.org/) + [Prettier](https://prettier.io/) to check for syntax errors and enforce a common code style.
+* [Formik](https://formik.org/) + [Yup](https://github.com/jquense/yup) to facilitate forms management and validation.
+* [Chakra UI](https://chakra-ui.com/) to be able to use some awesome predesigned components and an incredible design system.
+* [React Router](https://reactrouter.com/) to navigate through different components.
+* [Redux](https://redux.js.org/) + [Redux Toolkit](https://redux-toolkit.js.org/) for state management.
+* [Redux persist](https://github.com/rt2zz/redux-persist) to persist state managed by redux.
+* [RTK Query](https://redux-toolkit.js.org/rtk-query/overview) to make API requests (I know this is included with Redux Toolkit, but it's such and amazing tool, that I had to give it its own mention).
 
-### `yarn build`
+## Deploy
+To facilitate the deploying process, you can use [Netlify](https://www.netlify.com/). For this a **\_redirects** file has already been added to the **public** directory.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+If you use this tool, not only every commit to the master branch will automatically be deployed, but also a deploy preview will be created with every pull request that you create.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## CI
+This project is configured with [GitHub Actions](https://github.com/features/actions) so that each pull request is checked for eslint offenses and to run the tests.
