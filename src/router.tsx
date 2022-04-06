@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/static/home.page';
 import NotFoundPage from './pages/errors/not-found.page';
