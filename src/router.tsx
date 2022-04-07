@@ -1,17 +1,30 @@
+import { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { HomePage } from './pages/static/home.page';
-import { NotFoundPage } from './pages/errors/not-found.page';
-import { Footer } from './components/layout/footer.component';
-import { Navbar } from './components/layout/navbar.component';
+import { Footer } from '@/components/layout/footer.component';
+import { Hero } from '@/components/layout/hero.component';
+import { Navbar } from '@/components/layout/navbar.component';
+
+const HomePage = lazy(() =>
+  import('@/pages/static/home.page').then((module) => ({
+    default: module.HomePage,
+  })),
+);
+const NotFoundPage = lazy(() =>
+  import('@/pages/errors/not-found.page').then((module) => ({
+    default: module.NotFoundPage,
+  })),
+);
 
 export function Router() {
   return (
     <BrowserRouter>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
+      <Suspense fallback={<Hero navbar />}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </Suspense>
       <Footer />
     </BrowserRouter>
   );
