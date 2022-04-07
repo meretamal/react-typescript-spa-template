@@ -22,8 +22,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test": "react-scripts test",
-    "lint": "eslint --ext .ts,.tsx src",
-    "lint:fix": "eslint --ext .ts,.tsx src --fix",
+    "lint": "eslint --ext .ts,.tsx src cypress",
+    "lint:fix": "eslint --ext .ts,.tsx src cypress --fix",
     "test:e2e": "cypress run",
     "test:e2e:open": "cypress open"
   },
