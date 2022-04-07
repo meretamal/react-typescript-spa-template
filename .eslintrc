@@ -32,6 +32,11 @@
     "no-param-reassign": 0,
     "react/react-in-jsx-scope": 0
   },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
   "overrides": [
     {
       "files": ["cypress/**/*.ts"],
