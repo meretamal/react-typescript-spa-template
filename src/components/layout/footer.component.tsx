@@ -1,6 +1,6 @@
 import { Center, Text, Stack } from '@chakra-ui/react';
 
-export default function Footer() {
+export function Footer() {
   return (
     <Center p="4">
       <Stack spacing="2" alignItems="center">

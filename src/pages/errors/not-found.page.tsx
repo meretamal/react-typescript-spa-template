@@ -1,8 +1,8 @@
 import { Link as RouterLink } from 'react-router-dom';
 import { Box, Heading, Link, Stack, Text } from '@chakra-ui/react';
-import Hero from '@/components/layout/hero.component';
+import { Hero } from '@/components/layout/hero.component';
 
-export default function NotFoundPage() {
+export function NotFoundPage() {
   return (
     <Hero navbar display="flex" justifyContent="center" alignItems="center">
       <Stack spacing="3" align="center">

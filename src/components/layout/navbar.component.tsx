@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { Box, HStack, Text, useColorMode } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
-export default function Navbar() {
+export function Navbar() {
   const navigate = useNavigate();
   const { colorMode, toggleColorMode } = useColorMode();
   return (

@@ -20,4 +20,4 @@ export const exampleSlice = createSlice({
 
 export const { setFoo } = exampleSlice.actions;
 
-export default exampleSlice.reducer;
+export const { reducer } = exampleSlice;

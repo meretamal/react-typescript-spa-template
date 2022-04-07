@@ -1,5 +1,5 @@
 import { IExample } from '@/interfaces/example.interface';
-import baseApi from './base.api';
+import { baseApi } from './base.api';
 
 const exampleApi = baseApi.injectEndpoints({
   endpoints: (build) => ({

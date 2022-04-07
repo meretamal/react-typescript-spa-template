@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import HomePage from './pages/static/home.page';
-import NotFoundPage from './pages/errors/not-found.page';
-import Footer from './components/layout/footer.component';
-import Navbar from './components/layout/navbar.component';
+import { HomePage } from './pages/static/home.page';
+import { NotFoundPage } from './pages/errors/not-found.page';
+import { Footer } from './components/layout/footer.component';
+import { Navbar } from './components/layout/navbar.component';
 
-export default function Router() {
+export function Router() {
   return (
     <BrowserRouter>
       <Navbar />

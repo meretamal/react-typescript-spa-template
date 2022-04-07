@@ -6,7 +6,7 @@ export interface HeroProps extends BoxProps {
   navbar?: boolean;
 }
 
-export default function Hero({
+export function Hero({
   children = null,
   navbar = false,
   ...boxProps
