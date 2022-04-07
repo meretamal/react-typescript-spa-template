@@ -4,7 +4,7 @@ A React SPA developed with Typescript, with all the cool things you need.
 
 To scaffold this project I used [Vite](https://vitejs.dev/).
 
-You can check out a production build of the template in [here](), in case you want to test it before using it.
+You can check out a production build of the template in [here](https://rococo-malasada-8f98d2.netlify.app/), in case you want to test it before using it.
 
 ## Setup
 First of all, make a copy of this project by clicking on **"Use this template"**.
@@ -28,10 +28,9 @@ and visit http://localhost:3000 (you can change the port by adding the `PORT` va
 
 ## Tools and packages
 This template comes with different tools that you will definetly love:
+* [Chakra UI](https://chakra-ui.com/) to be able to use some awesome predesigned components and an incredible design system.
 * [Cypress](https://www.cypress.io/) to develop end to end tests.
 * [Eslint](https://eslint.org/) + [Prettier](https://prettier.io/) to check for syntax errors and enforce a common code style.
-* [Formik](https://formik.org/) + [Yup](https://github.com/jquense/yup) to facilitate forms management and validation.
-* [Chakra UI](https://chakra-ui.com/) to be able to use some awesome predesigned components and an incredible design system.
 * [React Router](https://reactrouter.com/) to navigate through different components.
 * [Redux](https://redux.js.org/) + [Redux Toolkit](https://redux-toolkit.js.org/) for state management.
 * [Redux persist](https://github.com/rt2zz/redux-persist) to persist state managed by redux.
