@@ -31,5 +31,13 @@
     "react/require-default-props": 0,
     "no-param-reassign": 0,
     "react/react-in-jsx-scope": 0
-  }
+  },
+  "overrides": [
+    {
+      "files": ["cypress/**/*.ts"],
+      "parserOptions": {
+        "project": "./cypress/tsconfig.json"
+      }
+    }
+  ]
 }
