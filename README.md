@@ -1,4 +1,4 @@
-# React Typescript SPA Starter
+# React Typescript SPA Template
 
 A React SPA developed with Typescript, with all the cool things you need.
 
